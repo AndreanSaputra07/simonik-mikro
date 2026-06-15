@@ -1,14 +1,9 @@
-version: '3.8'
-
 services:
-
   app:
     build: .
     container_name: simonik_app
     ports:
       - "8000:8000"
-    volumes:
-      - .:/var/www
     depends_on:
       - mysql
 
